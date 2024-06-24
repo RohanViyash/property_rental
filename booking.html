@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html" class="active">Book a Property</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Book a Property</h1>
+        <form id="booking-form">
+            <label for="property">Property:</label>
+            <select id="property" name="property"></select>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Book</button>
+        </form>
+        <h2>Booking History</h2>
+        <div id="booking-history"></div>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
